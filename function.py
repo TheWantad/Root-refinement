@@ -4,6 +4,7 @@ import sys
 import random
 from CHM import equation
 
+x = sp.symbols('t')
 def f(t, mode = 0,equation=equation):
     try:
         if mode == 0:
