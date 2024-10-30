@@ -2,10 +2,17 @@ import sympy as sp
 import os
 import sys
 import random
-from CHM import equation
+#from CHM import equation
 
-x = sp.symbols('t')
-def f(t, mode = 0,equation=equation):
+
+def f(t, mode = 0):
+    x = sp.symbols('t')
+    #equation = x**3-6*x-8
+    #equation = x**3-3*x**2+9*x-8
+    #equation = x**2+4*x+4
+    #equation = x**3-3*x**2+9*x-10
+    #equation = x*2**x-1
+    equation = x**3-3*x**2+9*x-10
     try:
         if mode == 0:
             result = equation.subs(x, t)
